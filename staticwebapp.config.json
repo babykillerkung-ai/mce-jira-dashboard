@@ -1,0 +1,19 @@
+{
+  "routes": [
+    {
+      "route": "/*",
+      "headers": {
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "ALLOWALL",
+        "Content-Security-Policy": "default-src 'self' 'unsafe-inline' 'unsafe-eval' data: blob:;"
+      }
+    }
+  ],
+  "navigationFallback": {
+    "rewrite": "/index.html"
+  },
+  "mimeTypes": {
+    ".html": "text/html",
+    ".json": "application/json"
+  }
+}
